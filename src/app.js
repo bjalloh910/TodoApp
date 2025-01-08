@@ -2,6 +2,8 @@
 import "./styles.css"; // importing the css file into the js file
 import { todoItem } from "./todo.js";
 import { todoList } from "./todoList.js"
+import { ProjectList } from "./project.js"
+import { initializeTaskFeature } from './dom.js';
 
 // create a class instance example
 const item1 = new todoItem("Buy groceries", "Milk, eggs, and bread", "2025-01-10", "normal", "don't forget keys", false);
@@ -27,3 +29,19 @@ todoList1.addItem(item3);
 console.log("here is the list", todoList1);
 
 todoList1.deleteItem("Finish math homework");
+
+// testing out project feature
+const projects = new ProjectList();
+console.log("Here is the default project", projects.projectArray); 
+projects.createNewProject("Travel");
+projects.createNewProject("Work");
+projects.createNewProject("DailyLife");
+projects.addTodoToProject("DailyLife", todoList1);
+console.log("Projects", projects.projectArray);
+//projects.deleteAProject("DailyLife");
+//console.log("here we delete", projects);
+
+
+
+// Dom stuff
+initializeTaskFeature('.addBtn', '.taskBox');
