@@ -25,7 +25,7 @@ export class todoItem {
         if(newPriority) this.priority = newPriority;
         if(newNotes) this.notes = newNotes;
         if(newCompleted) this.completed = newCompleted;
-        return `Todo Item updated: ${this.title}, ${this.description}, ${this.dueDate}, ${this.priority}, ${this.notes}, ${this.checklist}`;
+        return `Todo Item updated: ${this.title}, ${this.description}, ${this.dueDate}, ${this.priority}, ${this.notes}, ${this.completed}`;
     }
     markAsCompleted(){ // keep the method focused on marking the todo as completed without changing unrelated properties. 
         this.completed = true;
