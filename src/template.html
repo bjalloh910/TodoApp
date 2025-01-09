@@ -12,63 +12,68 @@
 <body>
     <div class="container-fluid">
         <div class="row flex-nowrap">
+
             <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
-                <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+                <div class="profileNav d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 min-vh-100">
                     <a href="/" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-                        <span class="fs-5 d-none d-sm-inline">Home</span>
+                        <span class="homeColor fs-5 d-none d-sm-inline">Home</span>
                     </a>
                     <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
                         <li class="nav-item">
                             <a href="#" class="nav-link align-middle px-0">
-                                <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">Home</span>
+                                <i class="fs-4 bi-house"></i> <span class="common-color ms-1 d-none d-sm-inline">Home</span>
                             </a>
                         </li>
                         <li>
                             <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
-                                <i class="fs-4 bi-speedometer2"></i> <span class="ms-1 d-none d-sm-inline">Dashboard</span> </a>
+                                <i class="fs-4 bi-speedometer2"></i> <span class="common-color ms-1 d-none d-sm-inline">Dashboard</span> </a>
                             <ul class="collapse show nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
                                 <li class="w-100">
-                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Item</span> 1 </a>
+                                    <a href="#" class="common-color nav-link px-0"> <span class="common-color d-none d-sm-inline">Item</span> 1 </a>
                                 </li>
                                 <li>
-                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Item</span> 2 </a>
+                                    <a href="#" class="common-color nav-link px-0"> <span class="common-color d-none d-sm-inline">Item</span> 2 </a>
                                 </li>
                             </ul>
                         </li>
                         <li>
                             <a href="#submenu2" data-bs-toggle="collapse" class="nav-link px-0 align-middle ">
-                                <i class="fs-4 bi-bootstrap"></i> <span class="ms-1 d-none d-sm-inline">Today</span></a>
+                                <i class="fs-4 bi-bootstrap"></i> <span class="common-color ms-1 d-none d-sm-inline">Today</span></a>
                             <ul class="collapse nav flex-column ms-1" id="submenu2" data-bs-parent="#menu">
                                 <li class="w-100">
-                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Item</span> 1</a>
+                                    <a href="#" class="common-color nav-link px-0"> <span class="common-color d-none d-sm-inline">Item</span> 1</a>
                                 </li>
                                 <li>
-                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Item</span> 2</a>
+                                    <a href="#" class="common-color nav-link px-0"> <span class="common-color d-none d-sm-inline">Item</span> 2</a>
                                 </li>
                             </ul>
                         </li>
                         <li>
+                            <div class="project">
                             <a href="#submenu3" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
-                                <i class="fs-4 bi-grid"></i> <span class="ms-1 d-none d-sm-inline">My Projects</span> </a>
-                                <ul class="collapse nav flex-column ms-1" id="submenu3" data-bs-parent="#menu">
+                                <i class="fs-4 bi-grid"></i> <span class="common-color ms-1 d-none d-sm-inline">My Projects</span>
+                            </a>
+                            <button class="project_add_btn">Add</button>
+                            </div>
+                                <ul class="proj_list collapse nav flex-column ms-1" id="submenu3" data-bs-parent="#menu">
                                 <li class="w-100">
-                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Product</span> 1</a>
+                                    <a href="#" class="common-color nav-link px-0"> <span class="common-color d-none d-sm-inline">Product</span> 1</a>
                                 </li>
                                 <li>
-                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Product</span> 2</a>
+                                    <a href="#" class="common-color nav-link px-0"> <span class="common-color d-none d-sm-inline">Product</span> 2</a>
                                 </li>
                                 <li>
-                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Product</span> 3</a>
+                                    <a href="#" class="common-color nav-link px-0"> <span class="common-color d-none d-sm-inline">Product</span> 3</a>
                                 </li>
                                 <li>
-                                    <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Product</span> 4</a>
+                                    <a href="#" class="common-color nav-link px-0"> <span class="common-color d-none d-sm-inline">Product</span> 4</a>
                                 </li>
                             </ul>
                         </li>
                         
                     </ul>
                     <hr>
-                    <div class="dropdown pb-4">
+                    <div class="dropdown pb-4" style="margin-top: auto;">
                         <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
                             <img src="/src/assetspic/pic.jpg" alt="hugenerd" width="30" height="30" class="rounded-circle">
                             <span class="d-none d-sm-inline mx-1">Denise</span>
@@ -85,6 +90,10 @@
                     </div>
                 </div>
             </div>
+
+
+
+
             <div class="col py-3"> <!-- Content aside from sidebar-->
                 <div class="header">
                     <a href="#default" class="logo">CompanyLogo</a>
@@ -96,10 +105,10 @@
                   </div>
 
                   <div class="outer_box">
-                    <h2>ProjectName</h2>
+                    <h2>Work</h2>
                     <button class="addBtn">Add a Task</button>
                   </div>
-                  <div>
+                  <div class="lol">
                     <h3>List of tasks</h3>
                     <div class="taskBox"></div>
                   </div>

@@ -4,6 +4,7 @@ import { todoItem } from "./todo.js";
 import { todoList } from "./todoList.js"
 import { ProjectList } from "./project.js"
 import { initializeTaskFeature } from './dom.js';
+import { addNewProject } from './projectDom.js'
 
 // create a class instance example
 const item1 = new todoItem("Buy groceries", "Milk, eggs, and bread", "2025-01-10", "normal", "don't forget keys", false);
@@ -45,3 +46,6 @@ console.log("Projects", projects.projectArray);
 
 // Dom stuff
 initializeTaskFeature('.addBtn', '.taskBox');
+
+
+addNewProject();
