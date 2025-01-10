@@ -15,12 +15,14 @@ button:hover{
   background-color: #6D2932;
 }
 .common-color {
-  color: #6D2932; /* Replace with your desired color */
+  color: #c7b7a3; /* Replace with your desired color */
 }
 .common-color:hover {
   color: #c7b7a3;
 }
-
+.backColor{
+  background-color: #6D2932;
+}
 /* Style the header with a grey background and some padding */
 .header {
     overflow: hidden;

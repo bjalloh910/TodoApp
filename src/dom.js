@@ -35,6 +35,7 @@ export function initializeTaskFeature(addBtnSelector, taskBoxSelector) {
 
   let currentEditingTask = null; //to keep track of task being edited
 
+  
   function resetModal(){
     modal.querySelectorAll('input, textarea, select').forEach((field) => (field.value = ''));
     modalTitle.textContent = 'Add a new Task';
@@ -93,6 +94,11 @@ export function initializeTaskFeature(addBtnSelector, taskBoxSelector) {
       } else {
         // Create a new todoItem instance
         const newTodo = new todoItem(title, description, dueDate, priority, notes);
+
+        let todos = JSON.parse(localStorage.getItem('todos')) || []; // Load todos from localStorage
+        todos.push(newTodo);
+
+        localStorage.setItem('todos', JSON.stringify(todos));
 
         // Add task to the taskBox (render it)
         const taskItem = document.createElement('div');

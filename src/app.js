@@ -5,6 +5,7 @@ import { todoList } from "./todoList.js"
 import { ProjectList } from "./project.js"
 import { initializeTaskFeature } from './dom.js';
 import { addNewProject } from './projectDom.js'
+import { storageAvailable } from './localStorage.js'
 
 // create a class instance example
 const item1 = new todoItem("Buy groceries", "Milk, eggs, and bread", "2025-01-10", "normal", "don't forget keys", false);
@@ -49,3 +50,11 @@ initializeTaskFeature('.addBtn', '.taskBox');
 
 
 addNewProject();
+
+
+// local storage testing
+if (storageAvailable("localStorage")) {
+    console.log("Yippee! We can use localStorage awesomeness")
+} else {
+    console.log("Too bad, no localStorage for us");
+}

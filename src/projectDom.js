@@ -9,8 +9,8 @@ export function addNewProject(){
     const newLi = document.createElement('li');
 
     const newLink = document.createElement('a');
-    newLink.href = `#product${projectList.children.length + 1}`;
-    newLink.textContent = `product ${projectList.children.length + 1}`;
+    newLink.href = `#Project${projectList.children.length + 1}`;
+    newLink.textContent = `Project ${projectList.children.length + 1}`;
     
     newLink.className = 'common-color nav-link px-0 align-middle';
 
